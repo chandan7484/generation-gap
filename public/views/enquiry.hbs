@@ -13,7 +13,7 @@
     <main>
         <div class="nav">
             <img src="./images/logo.jpeg" alt=""/>
-            <a class="hactive" href="home2.html"><b>Home</b></a>
+            <a class="hactive" href="/after_login"><b>Home</b></a>
             <div class="dropdown">
                 <button class="dropbtn">Tutorials 
                   <i class="fa fa-caret-down"></i>
@@ -33,19 +33,20 @@
                   <a href="security.html">Security</a>
                 </div>
               </div> 
-              <a href="./home2" ><b>Home</b></a>
-              <a href="./enquiry" ><b>Enquiry</b></a>
+              
+              <a href="/enquiry" ><b>Enquiry</b></a>
               <a href="logout.html"><b>Logout</b></a>
-             <a href="about.html"><b>About Us</b></a>
+             <a href="/aboutL"><b>About Us</b></a>
 </div>
         <div class="enquiry">
+            
             <p> <b>Have something to ask?</b> Fill up your details in the columns given below and write your question. <br>
             We will reach to you as soon as possible.</p>
-                <form id="form">
-                    <input type="text" class="name" placeholder="Enter your full name" required>
-                    <input type="email" class="email" placeholder="Enter your email" required>
-                    <input type="text" class="subject" placeholder="Type subject of query">
-                    <textarea rows="4" cols="50" name="query" class="query" placeholder="Type your question here..."></textarea>
+                <form id="form" action="/enquiry" method="post">
+                    <input type="text" name = "name" class="name" placeholder="Enter your full name" required>
+                    <input type="email" name="email" class="email" placeholder="Enter your email" required>
+                    <input type="text" name="subject" class="subject" placeholder="Type subject of query">
+                    <textarea rows="4" name="question" cols="50" name="query" class="query" placeholder="Type your question here..."></textarea>
                     <input type="submit" class="button" value="Submit">
                 </form>
                 
