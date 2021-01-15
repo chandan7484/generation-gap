@@ -24,12 +24,13 @@
                 <p>Already have an account? <a href="login.html">Login</a></p>
             </div>
             <div class="box">
-                <form class="form">
-                    <input type="text" class="fullname" placeholder="Full Name" required>
-                    <input type="email" class="email" placeholder="someone@abc.com" required>
-                    <input type="number" class="age" placeholder="Age" required>
-                    <input type="occupation" class="occupation"placeholder="Occupation" required>
-                    <input type="password" class="password" placeholder="Password" required>
+                <form class="form"  method="post" action="/register">
+                    <input name = "username" type="text" class="fullname" placeholder="Full Name" required>
+                    <input name="email"    type="email" class="email" placeholder="someone@abc.com" required>
+                    <input name="age"   type="number" class="age" placeholder="Age" required>
+                    <input name="occupation" type="text" class="occupation"placeholder="Occupation" required>
+                    <input name="password"  type="password" class="password" placeholder="Password" required>
+                    <input name="confirmpassword"   type="password" class="password" placeholder="Confirm Password" required>
                     <input type="submit" class="button" value="Register">
                 </form>
             </div>

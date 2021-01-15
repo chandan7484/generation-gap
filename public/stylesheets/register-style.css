@@ -16,11 +16,6 @@ body{
     display: flex;
 }
 
-.text, .box{
-    margin-top: 7vh;
-    flex: 1;
-}
-
 .text{
     margin-left: 10%;
     font-weight: 300px;
