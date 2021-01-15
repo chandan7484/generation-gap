@@ -1,0 +1,52 @@
+.enquiry{
+    margin-top:7vh;
+    height:130vh;
+    font-family: 'Raleway', sans-serif;;
+}
+.enquiry p{
+    margin-left:3%;
+    font-size:20px;
+    color:rgb(6,6,34);
+}
+#form{
+    padding:7%;
+    margin:5% 25%;
+    background-color:rgba(127, 186, 224,0.6);
+    box-sizing:border-box;
+    display:inline-block;
+    width:600px;
+    border-radius: 15%;
+    font-size:18px;
+}
+input{
+    margin: 20px 0;
+    padding: 10px;
+    border: none;
+   /* background: transparent;*/
+   background-color:rgba(212, 210, 205, 0.5);
+    outline: none;
+    color: rgb(6,6,34);
+    font-family: 'Raleway', sans-serif;
+}
+.name, .subject, .email, .query{
+    width:70%;
+    border-bottom: 1px solid rgb(6,6,34);
+    margin:2% 5% 2% 5%;
+    padding:2%;
+}
+.query{
+    margin:2% 5%;
+    background-color:rgba(212, 210, 205, 0.5);
+}
+.button{
+    font-weight:bold;
+    width:74%;
+    margin:2% 5%;
+    background-color:rgb(6,6,34,0.9);
+    color:white;
+    padding:2%;
+    font-size:20px;
+}
+.button:hover{
+    opacity:0.9;
+}

@@ -7,24 +7,13 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    background: #000;
+    background:rgb(6,6,34,0.3);
 }
 
 .background{
-    background: url(background.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh;
+  
+    height: 110vh;
     display: flex;
-}
-
-.text{
-    margin-top: 40vh;
-    flex: 1;
-}
-
-.box{
-    margin-top: 13vh;
-    flex: 1;
 }
 
 .text{
@@ -38,24 +27,24 @@ body{
 
 .text h1{
     font-size: 70px;
-    color: #fff;
-    font-weight: 500;
+    color: rgb(6,6,34);
+    font-weight: bold;
 }
 
 .text p{
     font-size: 20px;
-    color: #fff;
+    color: rgb(6,6,34);
     font-weight: 300;
 }
 
 .text p a{
-    color: #fff;
+    color: rgb(6,6,34);
     font-weight: 700;
 }
 
 .form{
     background: transparent;
-    color: #fff;
+    color:rgb(6,6,34);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -68,22 +57,21 @@ input{
     background: transparent;
     border: none;
     outline: none;
-    color: #fff;
+    color: rgb(6,6,34);
     font-family: 'Raleway', sans-serif;
 }
 
 .age, .password, .fullname, .email,.occupation{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgb(6,6,34);
 }
 
 .button{
-    background: transparent;
-    border: 1px solid #fff;
+    background-color: rgb(6,6,34,0.9);
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight:bold;
 }
 
 .button:hover{
-    background: #fff;
-    color: #000;
+   opacity:0.9;
 }

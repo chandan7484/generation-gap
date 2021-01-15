@@ -10,28 +10,8 @@ const app = express()
 const User=require("./models/User")
 
 
-const db ='mongodb+srv://hackathon:online@cluster0.wkx7c.mongodb.net/User?retryWrites=true&w=majority'
 
-
-// mongoose.connect('mongodb://localhost:27017/hellodb', {useNewUrlParser: true ,useUnifiedTopology: true},()=>{
-//     console.log('MongoDB connected');
-// });
-
-
-mongoose
-.connect(
-  
-  db,
-  {  
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-     useCreateIndex: true
-  }
-
-)
-.then(() => console.log('MongoDB Connected....'))
-.catch(err => console.log(err));
+const db ='mongodb+srv://@password:online@cluster0.wkx7c.mongodb.net/User?retryWrites=true&w=majority'
 
 
 app.use(express.json());
@@ -52,15 +32,6 @@ app.use('/user', require('./routes/user'));
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname+"/public/views/home.html"))
 })
-
-
-
-
-
-app.get("/login", function(req, res) {
-  res.render((path.join(__dirname+'/public/views/login')), { layout: false });
-})
-
 
 app.post('/login', (req, res) => {
   User.findOne({ "email": req.body.email}, async (err, user) => {
@@ -88,6 +59,10 @@ app.post('/login', (req, res) => {
 app.get("/register", function(req, res) {
   res.render((path.join(__dirname+'/public/views/register')), { layout: false });
 })
+app.get("/enquiry", function(req, res) {
+  res.sendFile(path.join(__dirname+"/public/views/enquiry.html"))
+})
+
 
 
 app.post('/register', async (req, res) => {
